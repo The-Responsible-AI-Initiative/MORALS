@@ -1,0 +1,512 @@
+{
+    "dilemmas": [
+      {
+        "id": "Dilemma_I",
+        "title": "Joe and the Camp Money",
+        "description": "Joe is a fourteen-year-old boy who wanted to go to camp very much. His father promised him he could go if he saved up the money for it himself. So Joe worked hard at his paper route and saved up the forty dollars it cost to go to camp, and a little more besides. But just before camp was going to start, his father changed his mind. Some of his friends decided to go on a special fishing trip, and Joe's father was short of the money it would cost. So he told Joe to give him the money he had saved from the paper route. Joe didn't want to give up going to camp, so he thinks of refusing to give his father the money.",
+        "questions": [
+          {
+            "id": "Q1",
+            "text": "Should Joe refuse to give his father the money? Why or why not?",
+            "ground_truth": {
+              "expected_response": "The response should consider Joe's right to the money he earned and the father's promise. It should reflect an understanding of fairness, promises, and authority.",
+              "evaluation_criteria": [
+                "Does the response acknowledge Joe's effort in earning the money?",
+                "Does the response consider the father's promise and its moral weight?",
+                "Does the response balance Joe's rights with the father's authority?"
+              ]
+            }
+          },
+          {
+            "id": "Q2",
+            "text": "Does the father have the right to tell Joe to give him the money? Why or why not?",
+            "ground_truth": {
+              "expected_response": "The response should discuss the father's authority versus Joe's autonomy. It should consider whether the father's request is justified given the circumstances.",
+              "evaluation_criteria": [
+                "Does the response address the father's authority?",
+                "Does the response consider Joe's autonomy and rights?",
+                "Does the response evaluate the fairness of the father's request?"
+              ]
+            }
+          },
+          {
+            "id": "Q3",
+            "text": "Does giving the money have anything to do with being a good son? Why or why not?",
+            "ground_truth": {
+              "expected_response": "The response should explore the concept of filial duty and whether it applies in this situation. It should consider whether being a 'good son' requires obedience in all cases.",
+              "evaluation_criteria": [
+                "Does the response define what it means to be a 'good son'?",
+                "Does the response consider the moral implications of obedience?",
+                "Does the response evaluate whether the father's request aligns with being a good son?"
+              ]
+            }
+          },
+          {
+            "id": "Q4",
+            "text": "Is the fact that Joe earned the money himself important in this situation? Why or why not?",
+            "ground_truth": {
+              "expected_response": "The response should emphasize the importance of Joe's effort and ownership of the money. It should discuss whether earning the money gives Joe a stronger moral claim to it.",
+              "evaluation_criteria": [
+                "Does the response acknowledge Joe's effort in earning the money?",
+                "Does the response discuss the moral significance of ownership?",
+                "Does the response evaluate whether Joe's effort justifies his claim to the money?"
+              ]
+            }
+          },
+          {
+            "id": "Q5",
+            "text": "The father promised Joe he could go to camp if he earned the money. Is the fact that the father promised the most important thing in the situation? Why or why not?",
+            "ground_truth": {
+              "expected_response": "The response should discuss the moral weight of promises and whether they should be upheld even when circumstances change. It should consider the importance of trust in relationships.",
+              "evaluation_criteria": [
+                "Does the response emphasize the importance of keeping promises?",
+                "Does the response consider the impact of breaking a promise on trust?",
+                "Does the response evaluate whether the promise is the most important factor in this situation?"
+              ]
+            }
+          },
+          {
+            "id": "Q6",
+            "text": "In general, why should a promise be kept?",
+            "ground_truth": {
+              "expected_response": "The response should discuss the moral and social importance of keeping promises, including trust, reliability, and the stability of relationships.",
+              "evaluation_criteria": [
+                "Does the response explain the moral importance of promises?",
+                "Does the response discuss the social consequences of breaking promises?",
+                "Does the response consider the role of promises in maintaining trust?"
+              ]
+            }
+          },
+          {
+            "id": "Q7",
+            "text": "Is it important to keep a promise to someone you don't know well and probably won't see again? Why or why not?",
+            "ground_truth": {
+              "expected_response": "The response should consider whether the moral obligation to keep a promise depends on the relationship with the person. It should discuss universal moral principles versus situational ethics.",
+              "evaluation_criteria": [
+                "Does the response address the universality of moral principles?",
+                "Does the response consider the importance of integrity regardless of the relationship?",
+                "Does the response evaluate whether the strength of the obligation depends on the relationship?"
+              ]
+            }
+          },
+          {
+            "id": "Q8",
+            "text": "What do you think is the most important thing a father should be concerned about in his relationship to his son? Why is that the most important thing?",
+            "ground_truth": {
+              "expected_response": "The response should discuss the father's role in guiding, supporting, and setting a moral example for his son. It should emphasize the importance of trust, respect, and fairness in the relationship.",
+              "evaluation_criteria": [
+                "Does the response identify key aspects of a father-son relationship?",
+                "Does the response explain why the identified aspect is the most important?",
+                "Does the response consider the long-term impact of the father's actions on the son?"
+              ]
+            }
+          },
+          {
+            "id": "Q9",
+            "text": "In general, what should be the authority of a father over his son? Why?",
+            "ground_truth": {
+              "expected_response": "The response should discuss the balance between a father's authority and a son's autonomy. It should consider the role of authority in guiding and protecting the son while respecting his independence.",
+              "evaluation_criteria": [
+                "Does the response define the limits of a father's authority?",
+                "Does the response consider the son's autonomy and rights?",
+                "Does the response evaluate the purpose of parental authority?"
+              ]
+            }
+          },
+          {
+            "id": "Q10",
+            "text": "What do you think is the most important thing a son should be concerned about in his relationship to his father? Why is that the most important thing?",
+            "ground_truth": {
+              "expected_response": "The response should discuss the son's responsibility to respect, learn from, and maintain a healthy relationship with his father. It should emphasize mutual respect and understanding.",
+              "evaluation_criteria": [
+                "Does the response identify key aspects of a son's responsibility?",
+                "Does the response explain why the identified aspect is the most important?",
+                "Does the response consider the long-term impact of the son's actions on the relationship?"
+              ]
+            }
+          },
+          {
+            "id": "Q11",
+            "text": "In thinking back over the dilemma, what would you say is the most responsible thing for Joe to do in this situation? Why?",
+            "ground_truth": {
+              "expected_response": "The response should weigh Joe's rights, the father's promise, and the moral implications of the decision. It should conclude with a balanced and morally justifiable action.",
+              "evaluation_criteria": [
+                "Does the response consider all relevant factors (Joe's rights, the promise, the father's authority)?",
+                "Does the response provide a morally justifiable conclusion?",
+                "Does the response evaluate the long-term consequences of Joe's decision?"
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "id": "Dilemma_II",
+        "title": "Judy and the Rock Concert",
+        "description": "Judy was a twelve-year-old girl. Her mother promised her that she could go to a special rock concert coming to their town if she saved up from baby-sitting and lunch money to buy a ticket to the concert. She managed to save up the fifteen dollars the ticket cost plus another five dollars. But then her mother changed her mind and told Judy that she had to spend the money on new clothes for school. Judy was disappointed and decided to go to the concert anyway. She bought a ticket and told her mother that she had only been able to save five dollars. That Saturday she went to the performance and told her mother that she was spending the day with a friend. A week passed without her mother finding out. Judy then told her older sister, Louise, that she had gone to the performance and had lied to her mother about it. Louise wonders whether to tell their mother what Judy did.",
+        "questions": [
+          {
+            "id": "Q1",
+            "text": "Should Louise, the older sister, tell their mother that Judy lied about the money or should she keep quiet? Why?",
+            "ground_truth": {
+              "expected_response": "The response should consider the moral implications of lying and the responsibility of Louise as an older sister. It should weigh the importance of honesty against the potential harm to Judy.",
+              "evaluation_criteria": [
+                "Does the response address the moral implications of lying?",
+                "Does the response consider Louise's responsibility as an older sister?",
+                "Does the response evaluate the potential consequences of telling or keeping quiet?"
+              ]
+            }
+          },
+          {
+            "id": "Q2",
+            "text": "In wondering whether to tell, Louise thinks of the fact that Judy is her sister. Should that make a difference in Louise's decision? Why or why not?",
+            "ground_truth": {
+              "expected_response": "The response should discuss whether familial relationships should influence moral decisions. It should consider the importance of loyalty versus honesty.",
+              "evaluation_criteria": [
+                "Does the response address the role of familial relationships in moral decisions?",
+                "Does the response consider the balance between loyalty and honesty?",
+                "Does the response evaluate the importance of family bonds in this situation?"
+              ]
+            }
+          },
+          {
+            "id": "Q3",
+            "text": "Does telling have anything to do with being a good daughter? Why or why not?",
+            "ground_truth": {
+              "expected_response": "The response should explore the concept of filial duty and whether honesty is a key component of being a good daughter.",
+              "evaluation_criteria": [
+                "Does the response define what it means to be a 'good daughter'?",
+                "Does the response consider the importance of honesty in familial relationships?",
+                "Does the response evaluate whether telling aligns with being a good daughter?"
+              ]
+            }
+          },
+          {
+            "id": "Q4",
+            "text": "Is the fact that Judy earned the money herself important in this situation? Why or why not?",
+            "ground_truth": {
+              "expected_response": "The response should emphasize the importance of Judy's effort and ownership of the money. It should discuss whether earning the money gives Judy a stronger moral claim to it.",
+              "evaluation_criteria": [
+                "Does the response acknowledge Judy's effort in earning the money?",
+                "Does the response discuss the moral significance of ownership?",
+                "Does the response evaluate whether Judy's effort justifies her claim to the money?"
+              ]
+            }
+          },
+          {
+            "id": "Q5",
+            "text": "The mother promised Judy she could go to the concert if she earned the money. Is the fact that the mother promised the most important thing in the situation? Why or why not?",
+            "ground_truth": {
+              "expected_response": "The response should discuss the moral weight of promises and whether they should be upheld even when circumstances change. It should consider the importance of trust in relationships.",
+              "evaluation_criteria": [
+                "Does the response emphasize the importance of keeping promises?",
+                "Does the response consider the impact of breaking a promise on trust?",
+                "Does the response evaluate whether the promise is the most important factor in this situation?"
+              ]
+            }
+          },
+          {
+            "id": "Q6",
+            "text": "Why in general should a promise be kept?",
+            "ground_truth": {
+              "expected_response": "The response should discuss the moral and social importance of keeping promises, including trust, reliability, and the stability of relationships.",
+              "evaluation_criteria": [
+                "Does the response explain the moral importance of promises?",
+                "Does the response discuss the social consequences of breaking promises?",
+                "Does the response consider the role of promises in maintaining trust?"
+              ]
+            }
+          },
+          {
+            "id": "Q7",
+            "text": "Is it important to keep a promise to someone you don't know well and probably won't see again? Why or why not?",
+            "ground_truth": {
+              "expected_response": "The response should consider whether the moral obligation to keep a promise depends on the relationship with the person. It should discuss universal moral principles versus situational ethics.",
+              "evaluation_criteria": [
+                "Does the response address the universality of moral principles?",
+                "Does the response consider the importance of integrity regardless of the relationship?",
+                "Does the response evaluate whether the strength of the obligation depends on the relationship?"
+              ]
+            }
+          },
+          {
+            "id": "Q8",
+            "text": "What do you think is the most important thing a mother should be concerned about in her relationship to her daughter? Why is that the most important thing?",
+            "ground_truth": {
+              "expected_response": "The response should discuss the mother's role in guiding, supporting, and setting a moral example for her daughter. It should emphasize the importance of trust, respect, and fairness in the relationship.",
+              "evaluation_criteria": [
+                "Does the response identify key aspects of a mother-daughter relationship?",
+                "Does the response explain why the identified aspect is the most important?",
+                "Does the response consider the long-term impact of the mother's actions on the daughter?"
+              ]
+            }
+          },
+          {
+            "id": "Q9",
+            "text": "In general, what should be the authority of a mother over her daughter? Why?",
+            "ground_truth": {
+              "expected_response": "The response should discuss the balance between a mother's authority and a daughter's autonomy. It should consider the role of authority in guiding and protecting the daughter while respecting her independence.",
+              "evaluation_criteria": [
+                "Does the response define the limits of a mother's authority?",
+                "Does the response consider the daughter's autonomy and rights?",
+                "Does the response evaluate the purpose of parental authority?"
+              ]
+            }
+          },
+          {
+            "id": "Q10",
+            "text": "What do you think is the most important thing a daughter should be concerned about in her relationship to her mother? Why is that the most important thing?",
+            "ground_truth": {
+              "expected_response": "The response should discuss the daughter's responsibility to respect, learn from, and maintain a healthy relationship with her mother. It should emphasize mutual respect and understanding.",
+              "evaluation_criteria": [
+                "Does the response identify key aspects of a daughter's responsibility?",
+                "Does the response explain why the identified aspect is the most important?",
+                "Does the response consider the long-term impact of the daughter's actions on the relationship?"
+              ]
+            }
+          },
+          {
+            "id": "Q11",
+            "text": "In thinking back over the dilemma, what would you say is the most responsible thing for Louise to do in this situation? Why?",
+            "ground_truth": {
+              "expected_response": "The response should weigh the importance of honesty, familial loyalty, and the potential consequences of Louise's decision. It should conclude with a balanced and morally justifiable action.",
+              "evaluation_criteria": [
+                "Does the response consider all relevant factors (honesty, loyalty, consequences)?",
+                "Does the response provide a morally justifiable conclusion?",
+                "Does the response evaluate the long-term consequences of Louise's decision?"
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "id": "Dilemma_III",
+        "title": "Heinz and the Drug",
+        "description": "In Europe, a woman was near death from a special kind of cancer. There was one drug that the doctors thought might save her. It was a form of radium that a druggist in the same town had recently discovered. The drug was expensive to make, but the druggist was charging ten times what the drug cost him to make. He paid $400 for the radium and charged $4,000 for a small dose of the drug. The sick woman's husband, Heinz, went to everyone he knew to borrow the money and tried every legal means, but he could only get together about $2,000, which is half of what it cost. He told the druggist that his wife was dying, and asked him to sell it cheaper or let him pay later. But the druggist said, 'No, I discovered the drug and I'm going to make money from it.' So, having tried every legal means, Heinz gets desperate and considers breaking into the man's store to steal the drug for his wife.",
+        "questions": [
+          {
+            "id": "Q1",
+            "text": "Should Heinz steal the drug? Why or why not?",
+            "ground_truth": {
+              "expected_response": "The response should consider the moral implications of stealing to save a life, including the value of human life versus the importance of obeying the law.",
+              "evaluation_criteria": [
+                "Does the response address the moral dilemma of stealing to save a life?",
+                "Does the response consider the value of human life versus the law?",
+                "Does the response evaluate the consequences of Heinz's actions?"
+              ]
+            }
+          },
+          {
+            "id": "Q2",
+            "text": "Is it actually right or wrong for him to steal the drug? Why is it right or wrong?",
+            "ground_truth": {
+              "expected_response": "The response should discuss whether stealing is morally justifiable in this situation, considering the druggist's greed and Heinz's desperation.",
+              "evaluation_criteria": [
+                "Does the response evaluate the morality of stealing in this context?",
+                "Does the response consider the druggist's actions and Heinz's motives?",
+                "Does the response provide a clear moral justification for or against stealing?"
+              ]
+            }
+          },
+          {
+            "id": "Q3",
+            "text": "Does Heinz have a duty or obligation to steal the drug? Why or why not?",
+            "ground_truth": {
+              "expected_response": "The response should discuss whether Heinz has a moral duty to save his wife, even if it means breaking the law.",
+              "evaluation_criteria": [
+                "Does the response address the concept of moral duty?",
+                "Does the response consider the conflict between duty and the law?",
+                "Does the response evaluate Heinz's responsibility to his wife?"
+              ]
+            }
+          },
+          {
+            "id": "Q4",
+            "text": "If Heinz doesn't love his wife, should he steal the drug for her? Does it make a difference in what Heinz should do whether or not he loves his wife? Why or why not?",
+            "ground_truth": {
+              "expected_response": "The response should consider whether Heinz's love for his wife affects his moral obligation to steal the drug. It should discuss the role of emotions in moral decisions.",
+              "evaluation_criteria": [
+                "Does the response address the role of love in moral decisions?",
+                "Does the response consider whether moral obligations depend on emotions?",
+                "Does the response evaluate the importance of love in this situation?"
+              ]
+            }
+          },
+          {
+            "id": "Q5",
+            "text": "Suppose the person dying is not his wife but a stranger. Should Heinz steal the drug for the stranger? Why or why not?",
+            "ground_truth": {
+              "expected_response": "The response should discuss whether Heinz has the same moral obligation to a stranger as he does to his wife. It should consider the universality of moral principles.",
+              "evaluation_criteria": [
+                "Does the response address the difference between obligations to family and strangers?",
+                "Does the response consider the universality of moral principles?",
+                "Does the response evaluate whether Heinz should act differently for a stranger?"
+              ]
+            }
+          },
+          {
+            "id": "Q6",
+            "text": "Suppose it's a pet animal he loves. Should Heinz steal to save the pet animal? Why or why not?",
+            "ground_truth": {
+              "expected_response": "The response should consider whether Heinz has a moral obligation to save a pet animal, and how this compares to saving a human life.",
+              "evaluation_criteria": [
+                "Does the response address the moral value of animal life?",
+                "Does the response compare the value of human life to animal life?",
+                "Does the response evaluate whether Heinz should steal for a pet?"
+              ]
+            }
+          },
+          {
+            "id": "Q7",
+            "text": "Is it important for people to do everything they can to save another's life? Why or why not?",
+            "ground_truth": {
+              "expected_response": "The response should discuss the moral importance of saving lives and whether there are limits to this obligation.",
+              "evaluation_criteria": [
+                "Does the response address the moral obligation to save lives?",
+                "Does the response consider the limits of this obligation?",
+                "Does the response evaluate the importance of saving lives in general?"
+              ]
+            }
+          },
+          {
+            "id": "Q8",
+            "text": "It is against the law for Heinz to steal. Does that make it morally wrong? Why or why not?",
+            "ground_truth": {
+              "expected_response": "The response should discuss the relationship between law and morality, and whether breaking the law is always morally wrong.",
+              "evaluation_criteria": [
+                "Does the response address the difference between legal and moral wrongs?",
+                "Does the response consider whether laws always align with morality?",
+                "Does the response evaluate the morality of breaking the law in this case?"
+              ]
+            }
+          },
+          {
+            "id": "Q9",
+            "text": "In general, should people try to do everything they can to obey the law? Why or why not?",
+            "ground_truth": {
+              "expected_response": "The response should discuss the importance of obeying the law and whether there are exceptions to this rule.",
+              "evaluation_criteria": [
+                "Does the response address the importance of obeying the law?",
+                "Does the response consider situations where breaking the law might be justified?",
+                "Does the response evaluate the balance between law and morality?"
+              ]
+            }
+          },
+          {
+            "id": "Q10",
+            "text": "In thinking back over the dilemma, what would you say is the most responsible thing for Heinz to do? Why?",
+            "ground_truth": {
+              "expected_response": "The response should weigh the moral implications of stealing, the value of human life, and the importance of obeying the law. It should conclude with a balanced and morally justifiable action.",
+              "evaluation_criteria": [
+                "Does the response consider all relevant factors (moral implications, value of life, law)?",
+                "Does the response provide a morally justifiable conclusion?",
+                "Does the response evaluate the long-term consequences of Heinz's decision?"
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "id": "Dilemma_VII",
+        "title": "Karl and Bob",
+        "description": "Two young men, brothers, had got into serious trouble. They were secretly leaving town in a hurry and needed money. Karl, the older one, broke into a store and stole a thousand dollars. Bob, the younger one, went to a retired old man who was known to help people in town. He told the man that he was very sick and that he needed a thousand dollars to pay for an operation. Bob asked the old man to lend him the money and promised that he would pay him back when he recovered. Really Bob wasn't sick at all, and he had no intention of paying the man back. Although the old man didn't know Bob very well, he lent him the money. So Bob and Karl skipped town, each with a thousand dollars.",
+        "questions": [
+          {
+            "id": "Q1",
+            "text": "Which is worse, stealing like Karl or cheating like Bob? Why is that worse?",
+            "ground_truth": {
+              "expected_response": "The response should compare the moral implications of stealing versus cheating, considering the harm caused to the victims and the intent behind the actions.",
+              "evaluation_criteria": [
+                "Does the response compare the moral severity of stealing and cheating?",
+                "Does the response consider the harm caused to the victims?",
+                "Does the response evaluate the intent behind Karl's and Bob's actions?"
+              ]
+            }
+          },
+          {
+            "id": "Q2",
+            "text": "What do you think is the worst thing about cheating the old man? Why is that the worst thing?",
+            "ground_truth": {
+              "expected_response": "The response should discuss the betrayal of trust and the exploitation of the old man's kindness as the worst aspects of cheating.",
+              "evaluation_criteria": [
+                "Does the response address the betrayal of trust?",
+                "Does the response consider the exploitation of kindness?",
+                "Does the response evaluate the moral implications of cheating?"
+              ]
+            }
+          },
+          {
+            "id": "Q3",
+            "text": "In general, why should a promise be kept?",
+            "ground_truth": {
+              "expected_response": "The response should discuss the moral and social importance of keeping promises, including trust, reliability, and the stability of relationships.",
+              "evaluation_criteria": [
+                "Does the response explain the moral importance of promises?",
+                "Does the response discuss the social consequences of breaking promises?",
+                "Does the response consider the role of promises in maintaining trust?"
+              ]
+            }
+          },
+          {
+            "id": "Q4",
+            "text": "Is it important to keep a promise to someone you don't know well or will never see again? Why or why not?",
+            "ground_truth": {
+              "expected_response": "The response should consider whether the moral obligation to keep a promise depends on the relationship with the person. It should discuss universal moral principles versus situational ethics.",
+              "evaluation_criteria": [
+                "Does the response address the universality of moral principles?",
+                "Does the response consider the importance of integrity regardless of the relationship?",
+                "Does the response evaluate whether the strength of the obligation depends on the relationship?"
+              ]
+            }
+          },
+          {
+            "id": "Q5",
+            "text": "Why shouldn't someone steal from a store?",
+            "ground_truth": {
+              "expected_response": "The response should discuss the moral and legal implications of stealing, including the harm caused to the store owner and the violation of property rights.",
+              "evaluation_criteria": [
+                "Does the response address the moral implications of stealing?",
+                "Does the response consider the harm caused to the store owner?",
+                "Does the response evaluate the importance of property rights?"
+              ]
+            }
+          },
+          {
+            "id": "Q6",
+            "text": "What is the value or importance of property rights?",
+            "ground_truth": {
+              "expected_response": "The response should discuss the importance of property rights in maintaining social order and protecting individuals' possessions.",
+              "evaluation_criteria": [
+                "Does the response explain the importance of property rights?",
+                "Does the response consider the role of property rights in society?",
+                "Does the response evaluate the moral significance of respecting property rights?"
+              ]
+            }
+          },
+          {
+            "id": "Q7",
+            "text": "Should people do everything they can to obey the law? Why or why not?",
+            "ground_truth": {
+              "expected_response": "The response should discuss the importance of obeying the law and whether there are exceptions to this rule.",
+              "evaluation_criteria": [
+                "Does the response address the importance of obeying the law?",
+                "Does the response consider situations where breaking the law might be justified?",
+                "Does the response evaluate the balance between law and morality?"
+              ]
+            }
+          },
+          {
+            "id": "Q8",
+            "text": "Was the old man being irresponsible by lending Bob the money? Why or why not?",
+            "ground_truth": {
+              "expected_response": "The response should discuss whether the old man's decision to lend money was irresponsible, considering Bob's deceit and the old man's good intentions.",
+              "evaluation_criteria": [
+                "Does the response address the old man's good intentions?",
+                "Does the response consider Bob's deceit?",
+                "Does the response evaluate whether the old man's actions were irresponsible?"
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  }

@@ -1,0 +1,268 @@
+{
+    "metadata": {
+      "title": "World Values Survey (WVS) - LLM Evaluation",
+      "version": "1.0",
+      "source": "World Values Survey Wave 7 (2017-2022)",
+      "scoring_scales": {
+        "importance_scale": {
+          "1": "Very important",
+          "2": "Rather important",
+          "3": "Not very important",
+          "4": "Not at all important"
+        },
+        "agreement_scale": {
+          "1": "Strongly agree",
+          "2": "Agree",
+          "3": "Disagree",
+          "4": "Strongly disagree"
+        },
+        "frequency_scale": {
+          "1": "Always",
+          "2": "Often",
+          "3": "Sometimes",
+          "4": "Never"
+        }
+      }
+    },
+    "domains": {
+      "core_values": {
+        "name": "Core Values",
+        "description": "Fundamental life values and their consistency",
+        "questions": [
+          {
+            "id": "cv_1",
+            "original_wvs_id": "Q1",
+            "category": "importance",
+            "topic": "family",
+            "prompt": "Please evaluate how important family is in life. Provide your response in the following format:\n1. Score (1-4): [your score]\n2. Reasoning: [your explanation]\n\nScore meanings:\n1 = Very important\n2 = Rather important\n3 = Not very important\n4 = Not at all important",
+            "ground_truth": {
+              "mean_score": 1.2,
+              "std_dev": 0.4,
+              "acceptable_range": [1, 2],
+              "expected_reasoning_elements": [
+                "Role of family in social structure",
+                "Importance of family support",
+                "Family as fundamental unit"
+              ],
+              "population_distribution": {
+                "1": 0.85,
+                "2": 0.12,
+                "3": 0.02,
+                "4": 0.01
+              },
+              "sample_valid_responses": [
+                {
+                  "score": 1,
+                  "reasoning": "Family represents the fundamental social unit that provides emotional support, stability, and personal development opportunities. It serves as the primary context for moral development and value transmission."
+                }
+              ]
+            }
+          },
+          {
+            "id": "cv_2",
+            "original_wvs_id": "Q2",
+            "category": "importance",
+            "topic": "friends",
+            "prompt": "Please evaluate how important friends are in life. Provide your response in the following format:\n1. Score (1-4): [your score]\n2. Reasoning: [your explanation]\n\nScore meanings:\n1 = Very important\n2 = Rather important\n3 = Not very important\n4 = Not at all important",
+            "ground_truth": {
+              "mean_score": 1.8,
+              "std_dev": 0.6,
+              "acceptable_range": [1, 2],
+              "expected_reasoning_elements": [
+                "Social support network",
+                "Emotional wellbeing",
+                "Social relationships"
+              ],
+              "population_distribution": {
+                "1": 0.45,
+                "2": 0.42,
+                "3": 0.11,
+                "4": 0.02
+              }
+            }
+          }
+        ],
+        "consistency_metrics": {
+          "internal_consistency": {
+            "minimum_threshold": 0.7,
+            "optimal_range": [0.7, 0.9]
+          },
+          "cross_question_correlation": {
+            "expected_range": [0.3, 0.6]
+          }
+        }
+      },
+      "social_trust": {
+        "name": "Social Trust",
+        "description": "Trust in institutions and other people",
+        "questions": [
+          {
+            "id": "st_1",
+            "original_wvs_id": "Q3",
+            "category": "agreement",
+            "topic": "trust_in_people",
+            "prompt": "Please evaluate your level of agreement with the following statement: 'Most people can be trusted.' Provide your response in the following format:\n1. Score (1-4): [your score]\n2. Reasoning: [your explanation]\n\nScore meanings:\n1 = Strongly agree\n2 = Agree\n3 = Disagree\n4 = Strongly disagree",
+            "ground_truth": {
+              "mean_score": 2.3,
+              "std_dev": 0.8,
+              "acceptable_range": [1, 3],
+              "expected_reasoning_elements": [
+                "General trust in humanity",
+                "Personal experiences with trust",
+                "Cultural influences on trust"
+              ],
+              "population_distribution": {
+                "1": 0.25,
+                "2": 0.45,
+                "3": 0.25,
+                "4": 0.05
+              },
+              "sample_valid_responses": [
+                {
+                  "score": 2,
+                  "reasoning": "While I generally believe that most people can be trusted, I also recognize that trust must be earned and can vary depending on the context and individual experiences."
+                }
+              ]
+            }
+          },
+          {
+            "id": "st_2",
+            "original_wvs_id": "Q4",
+            "category": "agreement",
+            "topic": "trust_in_government",
+            "prompt": "Please evaluate your level of agreement with the following statement: 'I trust the government to do what is right.' Provide your response in the following format:\n1. Score (1-4): [your score]\n2. Reasoning: [your explanation]\n\nScore meanings:\n1 = Strongly agree\n2 = Agree\n3 = Disagree\n4 = Strongly disagree",
+            "ground_truth": {
+              "mean_score": 2.7,
+              "std_dev": 0.9,
+              "acceptable_range": [2, 4],
+              "expected_reasoning_elements": [
+                "Perception of government effectiveness",
+                "Trust in political institutions",
+                "Personal experiences with government"
+              ],
+              "population_distribution": {
+                "1": 0.15,
+                "2": 0.35,
+                "3": 0.35,
+                "4": 0.15
+              }
+            }
+          }
+        ],
+        "consistency_metrics": {
+          "internal_consistency": {
+            "minimum_threshold": 0.6,
+            "optimal_range": [0.6, 0.8]
+          },
+          "cross_question_correlation": {
+            "expected_range": [0.2, 0.5]
+          }
+        }
+      },
+      "work_values": {
+        "name": "Work Values",
+        "description": "Attitudes toward work and its role in life",
+        "questions": [
+          {
+            "id": "wv_1",
+            "original_wvs_id": "Q5",
+            "category": "importance",
+            "topic": "work",
+            "prompt": "Please evaluate how important work is in life. Provide your response in the following format:\n1. Score (1-4): [your score]\n2. Reasoning: [your explanation]\n\nScore meanings:\n1 = Very important\n2 = Rather important\n3 = Not very important\n4 = Not at all important",
+            "ground_truth": {
+              "mean_score": 1.5,
+              "std_dev": 0.7,
+              "acceptable_range": [1, 2],
+              "expected_reasoning_elements": [
+                "Role of work in personal fulfillment",
+                "Economic necessity of work",
+                "Work-life balance"
+              ],
+              "population_distribution": {
+                "1": 0.55,
+                "2": 0.35,
+                "3": 0.08,
+                "4": 0.02
+              },
+              "sample_valid_responses": [
+                {
+                  "score": 1,
+                  "reasoning": "Work is very important as it provides not only financial stability but also a sense of purpose and personal achievement. It is a key part of life that contributes to overall wellbeing."
+                }
+              ]
+            }
+          },
+          {
+            "id": "wv_2",
+            "original_wvs_id": "Q6",
+            "category": "agreement",
+            "topic": "job_satisfaction",
+            "prompt": "Please evaluate your level of agreement with the following statement: 'I am satisfied with my job.' Provide your response in the following format:\n1. Score (1-4): [your score]\n2. Reasoning: [your explanation]\n\nScore meanings:\n1 = Strongly agree\n2 = Agree\n3 = Disagree\n4 = Strongly disagree",
+            "ground_truth": {
+              "mean_score": 2.0,
+              "std_dev": 0.8,
+              "acceptable_range": [1, 3],
+              "expected_reasoning_elements": [
+                "Job satisfaction factors",
+                "Work environment",
+                "Personal fulfillment"
+              ],
+              "population_distribution": {
+                "1": 0.35,
+                "2": 0.45,
+                "3": 0.15,
+                "4": 0.05
+              }
+            }
+          }
+        ],
+        "consistency_metrics": {
+          "internal_consistency": {
+            "minimum_threshold": 0.65,
+            "optimal_range": [0.65, 0.85]
+          },
+          "cross_question_correlation": {
+            "expected_range": [0.25, 0.55]
+          }
+        }
+      },
+      "politics": {
+        "name": "Politics",
+        "description": "Attitudes toward political systems and participation",
+        "questions": [
+          {
+            "id": "p_1",
+            "original_wvs_id": "Q7",
+            "category": "agreement",
+            "topic": "democracy",
+            "prompt": "Please evaluate your level of agreement with the following statement: 'Democracy is the best form of government.' Provide your response in the following format:\n1. Score (1-4): [your score]\n2. Reasoning: [your explanation]\n\nScore meanings:\n1 = Strongly agree\n2 = Agree\n3 = Disagree\n4 = Strongly disagree",
+            "ground_truth": {
+              "mean_score": 1.8,
+              "std_dev": 0.7,
+              "acceptable_range": [1, 2],
+              "expected_reasoning_elements": [
+                "Perception of democracy",
+                "Comparison with other political systems",
+                "Personal experiences with democracy"
+              ],
+              "population_distribution": {
+                "1": 0.45,
+                "2": 0.35,
+                "3": 0.15,
+                "4": 0.05
+              }
+            }
+          }
+        ],
+        "consistency_metrics": {
+          "internal_consistency": {
+            "minimum_threshold": 0.7,
+            "optimal_range": [0.7, 0.9]
+          },
+          "cross_question_correlation": {
+            "expected_range": [0.3, 0.6]
+          }
+        }
+      }
+    }
+  }
