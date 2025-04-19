@@ -9,11 +9,16 @@ class MoralFoundationsQuestionnaire(Instrument):
     """
     
     def __init__(self, data_path: str = None, data: Dict = None):
+        # Call parent's init
         super().__init__(data_path, data)
+        # Set foundations attribute
         self.foundations = self.data.get("foundations", {})
+        # Now validate after all attributes are set
+        self.validate()
     
     def validate(self) -> None:
         """Validate MFQ-specific data structure."""
+        # First validate the base structure
         super().validate()
         
         if "foundations" not in self.data:

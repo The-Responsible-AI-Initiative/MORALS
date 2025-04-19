@@ -23,7 +23,7 @@ class Instrument:
             raise ValueError("Either data_path or data must be provided")
         
         self.metadata = self.data.get("metadata", {})
-        self.validate()
+        # No validate call here
     
     def _load_data(self, data_path: str) -> Dict:
         """Load instrument data from a JSON file."""
