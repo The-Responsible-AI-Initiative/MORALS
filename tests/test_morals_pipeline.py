@@ -10,7 +10,7 @@ project_root = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(project_root))
 
 from morals.instruments.mfq import MoralFoundationsQuestionnaire
-from morals.evaluation.processor import MFQResponseProcessor
+from morals.evaluation.mfq_processor import MFQResponseProcessor
 from morals.evaluation.mfq_evaluator import MFQEvaluator
 
 # Example LLM responses for testing without API calls

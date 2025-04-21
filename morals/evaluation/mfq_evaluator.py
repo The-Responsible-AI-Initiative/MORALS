@@ -3,7 +3,7 @@ from typing import Dict, List, Any, Tuple
 import numpy as np
 
 from ..instruments.mfq import MoralFoundationsQuestionnaire
-from .processor import MFQResponseProcessor
+from .mfq_processor import MFQResponseProcessor
 
 
 class MFQEvaluator:
