@@ -15,7 +15,7 @@ LLM_Ethics_Benchmark (A Three-Dimensional Assessment System for Evaluating Moral
 - **Reasoning Analysis**: Assess the quality and consistency of moral reasoning, not just answers
 
 
-## 🔑 API Keys Setup
+## Installation
 
 ```bash
 # Set your API keys as environment variables
