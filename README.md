@@ -1,4 +1,4 @@
-# MORALS: Moral Reasoning Assessment of Large Language Models
+# LLM_Ethics_Benchmark: Moral Reasoning Assessment of Large Language Models
 
 **MORALS** is an open-source framework for evaluating the moral reasoning capabilities of large language models (LLMs). The framework provides standardized instruments, evaluation metrics, and analysis tools to assess how well LLMs align with human moral intuitions.
 
