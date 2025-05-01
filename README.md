@@ -109,18 +109,8 @@ if __name__ == "__main__":
 }
 
 
-## 📝 Citation
 
-## 📝 Citation
 
-```bibtex
-@misc{llm_ethics_benchmark2025,
- author = {Jiao, Junfeng and Murali, Abhejay and Atkinson, David and Afroogh, Saleh and Chen, Kevin and Dhurandhar, Amit},
- title = {LLM\_Ethics\_Benchmark: A Three-Dimensional Assessment System for Evaluating Moral Reasoning in Large Language Models},
- year = {2025},
- publisher = {GitHub},
- url = {https://github.com/yourusername/LLM_Ethics_Benchmark}
-}
 
 
 
