@@ -15,33 +15,7 @@ LLM_Ethics_Benchmark (A Three-Dimensional Assessment System for Evaluating Moral
 - **Reasoning Analysis**: Assess the quality and consistency of moral reasoning, not just answers
 
 
-## Installation
 
-```bash
-# Set your API keys as environment variables
-export ANTHROPIC_API_KEY="your_api_key_here"
-export OPENAI_API_KEY="your_api_key_here"
-
-
-## 📊 Key Components
-
-### 1. Moral Foundations Assessment
-Evaluates LLM alignment with five fundamental moral dimensions:
-* Care/Harm
-* Fairness/Cheating
-* Loyalty/Betrayal
-* Authority/Subversion
-* Sanctity/Degradation
-
-### 2. Reasoning Quality Evaluation
-Examines the sophistication of moral reasoning through:
-* Principle identification
-* Perspective-taking abilities
-* Consequence analysis
-* Consistent principle application
-
-### 3. Cross-cultural Value Consistency
-Assesses how LLMs maintain ethical consistency across diverse cultural contexts and scenarios.
 
 ## 📦 Installation
 
