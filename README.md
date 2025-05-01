@@ -111,6 +111,8 @@ if __name__ == "__main__":
 
 ## 📝 Citation
 
+## 📝 Citation
+
 ```bibtex
 @misc{llm_ethics_benchmark2025,
  author = {Jiao, Junfeng and Murali, Abhejay and Atkinson, David and Afroogh, Saleh and Chen, Kevin and Dhurandhar, Amit},
