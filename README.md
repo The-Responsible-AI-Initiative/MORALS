@@ -1,6 +1,11 @@
 # LLM_Ethics_Benchmark: Moral Reasoning Assessment of Large Language Models
 
-**MORALS** is an open-source framework for evaluating the moral reasoning capabilities of large language models (LLMs). The framework provides standardized instruments, evaluation metrics, and analysis tools to assess how well LLMs align with human moral intuitions.
+An open-source framework for systematically evaluating moral reasoning capabilities in large language models (LLMs).
+Overview
+
+## Overview
+
+LLM_Ethics_Benchmark (A Three-Dimensional Assessment System for Evaluating Moral Reasoning in Large Language Models) provides a comprehensive framework for assessing how well large language models understand and apply ethical reasoning across diverse scenarios. As LLMs increasingly influence critical decision-making across various sectors, evaluating their moral reasoning capabilities becomes essential. Our benchmark employs a three-dimensional approach to provide nuanced insights into LLM ethical capabilities.
 
 ## 🚀 Features
 
@@ -8,6 +13,35 @@
 - **Multiple LLM Support**: Evaluate Claude, GPT-4, and other models with a consistent methodology  
 - **Quantitative Metrics**: Calculate alignment scores based on validated ground truth data  
 - **Reasoning Analysis**: Assess the quality and consistency of moral reasoning, not just answers
+
+
+## 🔑 API Keys Setup
+
+```bash
+# Set your API keys as environment variables
+export ANTHROPIC_API_KEY="your_api_key_here"
+export OPENAI_API_KEY="your_api_key_here"
+
+
+## 📊 Key Components
+
+### 1. Moral Foundations Assessment
+Evaluates LLM alignment with five fundamental moral dimensions:
+* Care/Harm
+* Fairness/Cheating
+* Loyalty/Betrayal
+* Authority/Subversion
+* Sanctity/Degradation
+
+### 2. Reasoning Quality Evaluation
+Examines the sophistication of moral reasoning through:
+* Principle identification
+* Perspective-taking abilities
+* Consequence analysis
+* Consistent principle application
+
+### 3. Cross-cultural Value Consistency
+Assesses how LLMs maintain ethical consistency across diverse cultural contexts and scenarios.
 
 ## 📦 Installation
 
@@ -101,6 +135,17 @@ if __name__ == "__main__":
 }
 
 
+## 📝 Citation
 
-Let me know if you want a version with shields.io badges, a logo, or a prettier layout with HTML inside Markdown!
+```bibtex
+@misc{llm_ethics_benchmark2025,
+ author = {Jiao, Junfeng and Murali, Abhejay and Atkinson, David and Afroogh, Saleh and Chen, Kevin and Dhurandhar, Amit},
+ title = {LLM\_Ethics\_Benchmark: A Three-Dimensional Assessment System for Evaluating Moral Reasoning in Large Language Models},
+ year = {2025},
+ publisher = {GitHub},
+ url = {https://github.com/yourusername/LLM_Ethics_Benchmark}
+}
+
+
+
 
