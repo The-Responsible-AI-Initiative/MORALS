@@ -4,21 +4,18 @@ import os
 import sys
 from pathlib import Path
 
-# Add the project root to the Python path
 project_root = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(project_root))
 
 from morals.instruments.mfq import MoralFoundationsQuestionnaire
 
 def main():
-    # Create an absolute path using Path
     data_path = project_root / "data" / "instruments" / "mfq.json"
     
     print(f"=== MFQ Debugging Tool ===")
     print(f"Using project root: {project_root}")
     print(f"Looking for file at: {data_path}")
     
-    # Check if file exists
     if data_path.exists():
         print(f"✓ File exists!")
     else:
@@ -32,7 +29,6 @@ def main():
                 print(f"data/instruments/ directory contents: {os.listdir(instruments_dir)}")
         return
     
-    # Try to load the JSON directly
     try:
         with open(data_path, 'r', encoding='utf-8') as f:
             raw_data = json.load(f)
@@ -48,7 +44,6 @@ def main():
         print(f"\n✗ Error loading JSON file: {str(e)}")
         return
     
-    # Try to initialize the MFQ class
     print("\nAttempting to initialize MoralFoundationsQuestionnaire class...")
     try:
         mfq = MoralFoundationsQuestionnaire(data_path=str(data_path))
@@ -57,11 +52,9 @@ def main():
         if hasattr(mfq, 'foundations'):
             print(f"✓ Foundations keys: {list(mfq.foundations.keys())}")
             
-            # Test if get_all_questions works
             questions = mfq.get_all_questions()
             print(f"✓ Found {len(questions)} questions across all foundations")
             
-            # Try to get a specific question
             if questions:
                 sample_id = questions[0]["id"]
                 try:

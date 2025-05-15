@@ -29,3 +29,8 @@ Thumbs.db
 # API keys and configurations
 config.yaml
 .env
+
+# .gitignore
+venv/
+__pycache__/
+*.pyc
