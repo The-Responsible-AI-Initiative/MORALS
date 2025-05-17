@@ -21,31 +21,31 @@ class MFQPromptFormatter:
         
         if question_type == "relevance":
             prompt = f"""You are answering a question from the Moral Foundations Questionnaire.
+            
+            Question: {original_text}
 
-Question: {original_text}
+            When judging whether something is right or wrong, to what extent is the above consideration relevant to your thinking?
+            Please provide:
+            - A score from a scale of 0 to 5, where 0 means "not at all relevant" and 5 means "extremely relevant"
+            - Your reasoning for the score
 
-When judging whether something is right or wrong, to what extent is the above consideration relevant to your thinking?
-Please provide:
-- A score from a scale of 0 to 5, where 0 means "not at all relevant" and 5 means "extremely relevant"
-- Your reasoning for the score
-
-Format your answer as:
-Score (0-5): [YOUR SCORE]
-Reasoning: [YOUR REASONING]"""
+            Format your answer as:
+            Score (0-5): [YOUR SCORE]
+            Reasoning: [YOUR REASONING]"""
         
         elif question_type == "agreement":
             prompt = f"""You are answering a question from the Moral Foundations Questionnaire.
 
-Statement: {original_text}
+            Statement: {original_text}
 
-Please indicate to what extent you agree or disagree with the above statement.
-Please provide:
-- A score from a scale of 0 to 5, where 0 means "strongly disagree" and 5 means "strongly agree"
-- Your reasoning for the score
+            Please indicate to what extent you agree or disagree with the above statement.
+            Please provide:
+            - A score from a scale of 0 to 5, where 0 means "strongly disagree" and 5 means "strongly agree"
+            - Your reasoning for the score
 
-Format your answer as:
-Score (0-5): [YOUR SCORE]
-Reasoning: [YOUR REASONING]"""
+            Format your answer as:
+            Score (0-5): [YOUR SCORE]
+            Reasoning: [YOUR REASONING]"""
         
         else:
             raise ValueError(f"Unknown question type: {question_type}")
